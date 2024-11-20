@@ -685,6 +685,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^11.1.15":
+  version: 11.1.15
+  resolution: "swiper@npm:11.1.15"
+  checksum: 2fd6d8ee4cfd27294614f8eec7e15ea440d6fcb40a9ca4c66b6b951931c880507bfceadbf3ea5556ddc18382112f38afec2a8b340a5ef4e4099f07fbdb86dbad
+  languageName: node
+  linkType: hard
+
 "tslib@npm:2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
@@ -707,5 +714,6 @@ __metadata:
     react: 19.0.0-rc-66855b96-20241106
     react-dom: 19.0.0-rc-66855b96-20241106
     styled-components: ^6.1.13
+    swiper: ^11.1.15
   languageName: unknown
   linkType: soft
