@@ -30,7 +30,7 @@ const Home = () => {
             </Theme.Container>
 
             <Container>
-                <Introduction.Container>
+                <Introduction.Container id='introduction'>
                     <Introduction.Left>
                         <Introduction.TitleSmall>
                             Tank War
@@ -66,7 +66,7 @@ const Home = () => {
             </Container>
 
             <Container>
-                <Join.Container>
+                <Join.Container id='join-us'>
                     <Join.Title>
                         Are You Ready <br /> to Play?
                     </Join.Title>
@@ -85,7 +85,7 @@ const Home = () => {
             </Container>
 
             <Container>
-                <Collection.Container>
+                <Collection.Container id='collection'>
                     <Collection.SmallTitle>Collection</Collection.SmallTitle>
                     <Collection.Title>
                         <span className='gradient-text'>TANK WAR</span>
