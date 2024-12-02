@@ -25,7 +25,7 @@ const HeaderContainer = () => {
             <Container>
                 <Header.Left>
                     <Header.Logo>
-                        <LogoIcon />
+                        <img src='./images/logo.png' />
                     </Header.Logo>
 
                     <Header.LeftItem
@@ -43,7 +43,14 @@ const HeaderContainer = () => {
                     </Header.LeftItem>
                 </Header.Left>
 
-                <Button>{isMobile ? 'Join' : 'Join Now'}</Button>
+                <Button
+                    onClick={() =>
+                        (window.location.href =
+                            'https://t.me/BotTankWarGame_bot')
+                    }
+                >
+                    {isMobile ? 'Join' : 'Join Now'}
+                </Button>
             </Container>
         </Header.Container>
     )

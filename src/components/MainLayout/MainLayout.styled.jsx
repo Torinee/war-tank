@@ -27,6 +27,10 @@ export const Header = {
     Logo: styled.div`
         margin-right: 40px;
         cursor: pointer;
+
+        > img {
+            width: 50px;
+        }
     `
 }
 

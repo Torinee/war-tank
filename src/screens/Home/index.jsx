@@ -15,6 +15,10 @@ import Button from '@/components/Button'
 import LogoIcon from '@/images/LogoIcon'
 
 const Home = () => {
+    const goToPage = () => {
+        window.location.href = 'https://t.me/BotTankWarGame_bot'
+    }
+
     return (
         <Responsive>
             <Theme.Container>
@@ -50,7 +54,7 @@ const Home = () => {
                             characteristics.
                         </Introduction.Text>
 
-                        <Button size='lg' outline='dark'>
+                        <Button size='lg' outline='dark' onClick={goToPage}>
                             Join Now
                         </Button>
                     </Introduction.Left>
@@ -74,7 +78,9 @@ const Home = () => {
                     <Join.Box>
                         <Join.BoxLeft>
                             <p>Open the Box to get a Tank</p>
-                            <Button size='lg'>LET'S GO</Button>
+                            <Button size='lg' onClick={goToPage}>
+                                LET'S GO
+                            </Button>
                         </Join.BoxLeft>
 
                         <Join.BoxRight>
@@ -135,7 +141,7 @@ const Home = () => {
                             <img src='/images/tank_isolation.png' alt='' />
                         </Friendship.Image>
                         <Friendship.Text>JOIN THE FRIENDSHIP</Friendship.Text>
-                        <Friendship.Button size='lg'>
+                        <Friendship.Button size='lg' onClick={goToPage}>
                             LET'S GO
                         </Friendship.Button>
                     </Friendship.Background>
