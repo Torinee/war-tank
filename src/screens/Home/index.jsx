@@ -45,13 +45,11 @@ const Home = () => {
                         </Introduction.TitleWeight>
 
                         <Introduction.Text>
-                            Immerse yourself in a world where battles against
-                            zombies bring peace to the world, a decision to
-                            share everything. Each Tank War is a digital
-                            masterpiece, handcrafted to embody rebellion and
-                            individuality. This collection features 5 types of
-                            combat vehicles, each with its own distinct
-                            characteristics.
+                            Tank War is a tank war game that combines a unique
+                            Play-to-Earn mechanism, where players can
+                            participate in intense battles and use strategic
+                            skills to win , and at the same time earn real money
+                            through in-game activities with attractive ROI
                         </Introduction.Text>
 
                         <Button size='lg' outline='dark' onClick={goToPage}>
@@ -62,7 +60,7 @@ const Home = () => {
                     <Introduction.Right>
                         <Introduction.RightBg>
                             <Introduction.RightImage>
-                                <LogoIcon />
+                                <img src='./images/logo.png' />
                             </Introduction.RightImage>
                         </Introduction.RightBg>
                     </Introduction.Right>
@@ -114,21 +112,27 @@ const Home = () => {
                     >
                         <Collection.Slide>
                             <img src='/images/tank_01.png' />
+                            <img src='/images/logo.png' />
                         </Collection.Slide>
                         <Collection.Slide>
                             <img src='/images/tank_02.png' />
+                            <img src='/images/logo.png' />
                         </Collection.Slide>
                         <Collection.Slide>
                             <img src='/images/tank_03.png' />
+                            <img src='/images/logo.png' />
                         </Collection.Slide>
                         <Collection.Slide>
                             <img src='/images/tank_04.png' />
+                            <img src='/images/logo.png' />
                         </Collection.Slide>
                         <Collection.Slide>
                             <img src='/images/tank_05.png' />
+                            <img src='/images/logo.png' />
                         </Collection.Slide>
                         <Collection.Slide>
                             <img src='/images/tank_06.png' />
+                            <img src='/images/logo.png' />
                         </Collection.Slide>
                     </Swiper>
                 </Collection.Container>

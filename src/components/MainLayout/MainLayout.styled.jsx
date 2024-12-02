@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Header = {
     Container: styled.div`
@@ -23,13 +23,21 @@ export const Header = {
         font-weight: 700;
         padding: 0 10px;
         cursor: pointer;
+
+        ${({ isHideOnMobile }) =>
+            isHideOnMobile &&
+            css`
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            `}
     `,
     Logo: styled.div`
         margin-right: 40px;
         cursor: pointer;
 
         > img {
-            width: 50px;
+            height: 50px;
         }
     `
 }
@@ -87,7 +95,10 @@ export const Responsive = styled.div`
             padding: 0 5px;
         }
         ${Header.Logo} {
-            margin-right: 0;
+            margin-right: 10px;
+            > img {
+                height: 35px;
+            }
         }
 
         ${Footer.Container} {

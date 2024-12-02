@@ -33,13 +33,24 @@ const HeaderContainer = () => {
                     >
                         Introduction
                     </Header.LeftItem>
-                    <Header.LeftItem onClick={() => scrollToElement('join-us')}>
+                    <Header.LeftItem
+                        onClick={() => scrollToElement('join-us')}
+                        isHideOnMobile
+                    >
                         Join Us
                     </Header.LeftItem>
                     <Header.LeftItem
                         onClick={() => scrollToElement('collection')}
+                        isHideOnMobile
                     >
                         Collection
+                    </Header.LeftItem>
+                    <Header.LeftItem
+                        onClick={() =>
+                            (window.location.href = 'https://docs.tankwar.xyz')
+                        }
+                    >
+                        Whitepaper
                     </Header.LeftItem>
                 </Header.Left>
 

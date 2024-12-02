@@ -76,7 +76,7 @@ export const Introduction = {
         margin-bottom: 30px;
     `,
     Right: styled.div`
-        width: 400px;
+        width: 380px;
     `,
     RightBg: styled.div`
         background: red;
@@ -88,14 +88,12 @@ export const Introduction = {
     RightImage: styled.div`
         position: absolute;
         left: 50%;
-        top: 80px;
+        top: 110px;
         transform: translateX(-50%);
-        width: 110%;
-        height: 110%;
+        width: 120%;
 
-        > svg {
+        > img {
             width: 100%;
-            height: 100%;
         }
     `
 }
@@ -169,8 +167,15 @@ export const Collection = {
     `,
     Slide: styled(SwiperSlide)`
         cursor: pointer;
-        > img {
+        > img:first-child {
             width: 100%;
+        }
+        > img:last-child {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            transform: translateX(-50%);
+            width: 50%;
         }
     `
 }
