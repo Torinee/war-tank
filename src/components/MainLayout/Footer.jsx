@@ -4,6 +4,7 @@ import TwitterIcon from '@/images/TwitterIcon'
 import YoutubeIcon from '@/images/YoutubeIcon'
 import React from 'react'
 import { Footer } from './MainLayout.styled'
+import TelegramIcon from '@/images/TelegramIcon'
 
 const FooterContainer = () => {
     return (
@@ -19,10 +20,14 @@ const FooterContainer = () => {
                     Company
                 </Footer.SocialTitle>
                 <Footer.SocialList>
-                    <FacebookIcon />
-                    <InstagramIcon />
-                    <TwitterIcon />
-                    <YoutubeIcon />
+                    <TelegramIcon
+                        onClick={() => window.open('https://t.me/tankwarvip')}
+                    />
+                    <TwitterIcon
+                        onClick={() =>
+                            window.open('https://x.com/tankwar_gamep2e')
+                        }
+                    />
                 </Footer.SocialList>
             </Footer.SocialContainer>
         </Footer.Container>

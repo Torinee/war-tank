@@ -88,8 +88,8 @@ export const Introduction = {
     RightImage: styled.div`
         position: absolute;
         left: 50%;
-        top: 110px;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 120%;
 
         > img {
@@ -100,7 +100,7 @@ export const Introduction = {
 
 export const Join = {
     Container: styled.div`
-        margin-top: 150px;
+        margin-top: 120px;
     `,
     Title: styled.div`
         font-size: 64px;
@@ -182,7 +182,7 @@ export const Collection = {
 
 export const Friendship = {
     Container: styled.div`
-        margin-top: 250px;
+        margin-top: 200px;
         margin-bottom: 100px;
     `,
     Background: styled.div`
@@ -197,18 +197,14 @@ export const Friendship = {
         font-weight: 700;
         font-size: 64px;
         color: white;
-        padding-top: 220px;
+        padding-top: 20px;
     `,
     Button: styled(Button)`
         margin: 20px 0 40px 0;
     `,
     Image: styled.div`
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 240px;
-
         > img {
+            margin-top: 20px;
             width: 100%;
             max-width: 550px;
         }
@@ -263,6 +259,9 @@ export const Responsive = styled.div`
             width: 300px;
         }
 
+        ${Join.Container} {
+            margin-top: 80px;
+        }
         ${Join.Title} {
             font-size: 40px;
             line-height: normal;
@@ -310,11 +309,9 @@ export const Responsive = styled.div`
         }
         ${Friendship.Image} {
             width: 280px;
-            bottom: 160px;
         }
         ${Friendship.Text} {
             font-size: 24px;
-            padding-top: 140px;
         }
     }
 `

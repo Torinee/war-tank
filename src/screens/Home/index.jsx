@@ -142,7 +142,7 @@ const Home = () => {
                 <Friendship.Container>
                     <Friendship.Background>
                         <Friendship.Image>
-                            <img src='/images/tank_isolation.png' alt='' />
+                            <img src='/images/logo.png' alt='' />
                         </Friendship.Image>
                         <Friendship.Text>JOIN THE FRIENDSHIP</Friendship.Text>
                         <Friendship.Button size='lg' onClick={goToPage}>
